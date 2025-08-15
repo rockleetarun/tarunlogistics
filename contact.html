@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact • Tarun Logistics</title>
-  <meta name="description" content="Tarun Logistics offers reliable trucking, freight, and logistics services across North America." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Request a Quote • Tarun Logistics</title>
+  <meta name="description" content="Tarun Logistics offers reliable trucking, freight, and logistics services across India." />
   <link rel="icon" href="assets/img/logo.png" />
-  <meta property="og:title" content="Contact • Tarun Logistics" />
-  <meta property="og:description" content="Reliable transportation & logistics services across North America." />
+  <meta property="og:title" content="Request a Quote • Tarun Logistics" />
+  <meta property="og:description" content="Reliable transportation & logistics services across India." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1586521415246-08827c6a1b78?q=80&w=1600&auto=format&fit=crop" />
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
@@ -27,40 +27,62 @@
           <a href="about.html" class="">About</a>
           <a href="services.html" class="">Services</a>
           <a href="gallery.html" class="">Gallery</a>
-          <a href="contact.html" class="btn btn-accent active">Contact</a>
+          <a href="contact.html" class="btn btn-accent active">Request a Quote</a>
         </nav>
       </div>
     </header>
     
 
-<section class="page-hero small" style="--hero-bg: url('https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=2400&auto=format&fit=crop');">
-  <div class="container"><h1>Contact Us</h1></div>
+<section class="page-hero small" style="--hero-bg: url('https://images.unsplash.com/photo-1501696461415-6bd6660c6741?q=80&w=2400&auto=format&fit=crop');">
+  <div class="container"><h1>Request a Quote</h1></div>
 </section>
 <section class="container contact-wrap">
-  <form class="contact-form" name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact" />
+  <form class="contact-form" action="https://formspree.io/f/xgvzqpjz" method="POST">
+    <p class="form-note">Complete the form and our team will get back to you promptly.</p>
     <label>Full name
-      <input required type="text" name="name" placeholder="Jane Doe" />
+      <input required type="text" name="name" placeholder="Your name" />
     </label>
     <label>Email
       <input required type="email" name="email" placeholder="you@company.com" />
     </label>
     <label>Phone
-      <input type="tel" name="phone" placeholder="+1 555 123 4567" />
+      <input required type="tel" name="phone" placeholder="+91 93210 27929" />
     </label>
+    <div class="grid-2">
+      <label>Pickup Location
+        <input required type="text" name="pickup" placeholder="City / Port / ICD" />
+      </label>
+      <label>Drop Location
+        <input required type="text" name="drop" placeholder="City / Port / ICD" />
+      </label>
+    </div>
+    <div class="grid-2">
+      <label>Freight Type
+        <input type="text" name="freight_type" placeholder="Container / Dry / Reefer / Hazardous" />
+      </label>
+      <label>Weight / Volume
+        <input type="text" name="weight" placeholder="e.g., 25 MT / 20 FT" />
+      </label>
+    </div>
     <label>Message
-      <textarea required name="message" rows="5" placeholder="Tell us about your freight, lane, and schedule…"></textarea>
+      <textarea required name="message" rows="5" placeholder="Share load details, preferred dates, and any instructions."></textarea>
     </label>
-    <button class="btn btn-accent" type="submit">Send message</button>
+    <input type="hidden" name="_subject" value="New Quote Request - Tarun Logistics">
+    <button class="btn btn-accent" type="submit">Send request</button>
   </form>
   <div class="contact-info">
-    <h3>Tarun Logistics</h3>
+    <h3>Contact</h3>
     <p><a href="mailto:info@tarunlogistics.com">info@tarunlogistics.com</a><br/>
-       <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></p>
-    <p>123 Logistics Way, Dallas, TX</p>
+       <a href="tel:+919321027929">+91 93210 27929</a></p>
+    <h4>Registered Office</h4>
+    <p>B 230, Steel Chamber Co-Op, Plot 514, Steel Market, Kalamboli, Navi Mumbai - 410218</p>
+    <h4>Branches</h4>
+    <ul class="pill-list">
+      <li>Mundra</li><li>Noida</li><li>Panipat</li><li>Delhi</li>
+    </ul>
     <div class="map-ratio">
-      <iframe title="Map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Dallas%20TX&output=embed"></iframe>
+      <iframe title="Map: Navi Mumbai" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=B%20230%20Steel%20Chamber%20Co-Op%20Kalamboli%20Navi%20Mumbai&output=embed"></iframe>
     </div>
   </div>
 </section>
@@ -73,7 +95,7 @@
             <img src="assets/img/logo.png" alt="Tarun Logistics logo" />
             <strong>Tarun Logistics</strong>
           </div>
-          <p>Reliable transportation & logistics services across North America.</p>
+          <p>Reliable transportation & logistics services across India.</p>
         </div>
         <div>
           <h4>Company</h4>
@@ -81,22 +103,21 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul class="contact-list">
             <li><a href="mailto:info@tarunlogistics.com">info@tarunlogistics.com</a></li>
-            <li><a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></li>
-            <li>Mon–Fri, 8:00–18:00</li>
+            <li><a href="tel:+919321027929">+91 93210 27929</a></li>
+            <li>Mon–Sat, 9:00–19:00</li>
           </ul>
         </div>
       </div>
       <div class="subfooter">
         <div class="container">
           <span>© <span id="year"></span> Tarun Logistics. All rights reserved.</span>
-          <span>Built with ❤️ on GitHub Pages.</span>
         </div>
       </div>
     </footer>

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', () => {
       const open = nav.style.display === 'flex';
       nav.style.display = open ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
       toggle.setAttribute('aria-expanded', String(!open));
     });
   }
