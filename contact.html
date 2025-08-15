@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home • Tarun Logistics</title>
+  <title>Contact • Tarun Logistics</title>
   <meta name="description" content="Tarun Logistics offers reliable trucking, freight, and logistics services across North America." />
   <link rel="icon" href="assets/img/logo.png" />
-  <meta property="og:title" content="Home • Tarun Logistics" />
+  <meta property="og:title" content="Contact • Tarun Logistics" />
   <meta property="og:description" content="Reliable transportation & logistics services across North America." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1600&auto=format&fit=crop" />
@@ -23,67 +23,45 @@
         </a>
         <button id="nav-toggle" aria-label="Toggle menu" class="nav-toggle" aria-expanded="false">☰</button>
         <nav id="primary-nav" class="primary-nav">
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html" class="">Home</a>
           <a href="about.html" class="">About</a>
           <a href="services.html" class="">Services</a>
           <a href="gallery.html" class="">Gallery</a>
-          <a href="contact.html" class="btn btn-accent ">Contact</a>
+          <a href="contact.html" class="btn btn-accent active">Contact</a>
         </nav>
       </div>
     </header>
     
 
-<section class="hero" style="--hero-bg: url('https://images.unsplash.com/photo-1503378899155-2c86bf5bb88d?q=80&w=2400&auto=format&fit=crop');">
-  <div class="container hero-inner">
-    <h1>Delivering Your Business Forward</h1>
-    <p>On-time freight, transparent tracking, and service-first trucking.</p>
-    <div class="hero-cta">
-      <a class="btn btn-accent" href="contact.html">Request a Quote</a>
-      <a class="btn btn-ghost" href="services.html">View Services</a>
+<section class="page-hero small" style="--hero-bg: url('https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=2400&auto=format&fit=crop');">
+  <div class="container"><h1>Contact Us</h1></div>
+</section>
+<section class="container contact-wrap">
+  <form class="contact-form" name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <label>Full name
+      <input required type="text" name="name" placeholder="Jane Doe" />
+    </label>
+    <label>Email
+      <input required type="email" name="email" placeholder="you@company.com" />
+    </label>
+    <label>Phone
+      <input type="tel" name="phone" placeholder="+1 555 123 4567" />
+    </label>
+    <label>Message
+      <textarea required name="message" rows="5" placeholder="Tell us about your freight, lane, and schedule…"></textarea>
+    </label>
+    <button class="btn btn-accent" type="submit">Send message</button>
+  </form>
+  <div class="contact-info">
+    <h3>Tarun Logistics</h3>
+    <p><a href="mailto:info@tarunlogistics.com">info@tarunlogistics.com</a><br/>
+       <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></p>
+    <p>123 Logistics Way, Dallas, TX</p>
+    <div class="map-ratio">
+      <iframe title="Map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Dallas%20TX&output=embed"></iframe>
     </div>
-  </div>
-</section>
-
-<section class="logos">
-  <div class="container logos-grid" aria-label="Partner logos">
-    <img src="https://images.unsplash.com/photo-1520975867597-0af37a22e31f?q=80&w=400&auto=format&fit=crop" alt="Highway" />
-    <img src="https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?q=80&w=400&auto=format&fit=crop" alt="Warehouse" />
-    <img src="https://images.unsplash.com/photo-1587840171670-8b850147754e?q=80&w=400&auto=format&fit=crop" alt="Boxes" />
-    <img src="https://images.unsplash.com/photo-1544198365-3b43e77a1462?q=80&w=400&auto=format&fit=crop" alt="Containers" />
-  </div>
-</section>
-
-<section class="features container">
-  <div class="feature">
-    <h3>Nationwide Coverage</h3>
-    <p>From short-haul to cross-country routes, we’ve got you covered.</p>
-  </div>
-  <div class="feature">
-    <h3>Real-Time Tracking</h3>
-    <p>Live updates that keep you and your customers in the loop.</p>
-  </div>
-  <div class="feature">
-    <h3>Safety First</h3>
-    <p>FMCSA-compliant operations and rigorously maintained equipment.</p>
-  </div>
-</section>
-
-<section class="split container">
-  <div class="split-text">
-    <h2>Trusted by manufacturers, retailers, and 3PLs</h2>
-    <p>We combine a modern fleet with experienced dispatch to move your freight efficiently and safely.</p>
-    <a class="link-arrow" href="about.html">Learn more about us</a>
-  </div>
-  <div class="split-media">
-    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1600&auto=format&fit=crop" alt="Truck on road" />
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container cta-band-inner">
-    <h2>Need capacity this week?</h2>
-    <p>Tell us your lane and freight details — we’ll respond fast.</p>
-    <a class="btn btn-accent" href="contact.html">Get a fast quote</a>
   </div>
 </section>
 
