@@ -35,6 +35,7 @@ a{color:inherit;text-decoration:none}
 .link-arrow{display:inline-flex;gap:.5rem;align-items:center}
 .link-arrow::after{content:"→"}
 
+
 /* Hero */
 .hero{
   position: relative;
